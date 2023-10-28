@@ -1,0 +1,140 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import HomeBtn from "../../components/HomeBtn.astro"
+import TwDocsBtn from "../../components/TwDocsBtn.astro"
+
+const tabAndMainH1Title = "Backgrounds and Shadows"
+const twDocsBtnName = "Background Repeat"
+const twDocsBtnLink = "https://tailwindcss.com/docs/background-repeat"
+---
+
+<Layout title={tabAndMainH1Title}>
+   <!-- ----------------------------------------------------------- -->
+   <!-- PADDING BOTTOM DIV -->
+   <div class="pb-20">
+      <!-- ----------------------------------------------------------- -->
+      <!-- HOME BUTTON -->
+      <div class="pl-5 pt-5">
+         <HomeBtn />
+      </div>
+      <!-- ----------------------------------------------------------- -->
+      <!-- PADDING 5 and TEXT CENTER DIV -->
+      <div class="p-5 text-center">
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN PAGE H1 TITLE -->
+         <h1 class="text-2xl pb-10">{tabAndMainH1Title}</h1>
+         <!-- ----------------------------------------------------------- -->
+         <!-- TAILWIND DOCS BUTTON -->
+         <div class="flex justify-center">
+            <TwDocsBtn btnLink={twDocsBtnLink} btnName={twDocsBtnName} />
+         </div>
+         <!-- ----------------------------------------------------------- -->
+         <!-- PAGE TOPICS -->
+         <p
+            class="pt-10 underline underline-offset-4 decoration-amber-200 pb-3 text-2xl"
+         >
+            Page Topics
+         </p>
+         <p>Background Repeat</p>
+         <p>Background Size</p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN CONTENT -->
+         <!-- ----------------------------------------------------------- -->
+         <!-- H2 SPECIFIC TOPIC HEADING (Spans Page w/background) -->
+         <h2
+            class="text-xl underline decoration-amber-200 underline-offset-4 py-5 mt-10 mb-5 bg-black text-white"
+         >
+            Background Repeat
+         </h2>
+         <!-- ----------------------------------------------------------- -->
+         <!-- SUB TOPIC HEADING EXPLANATION -->
+         <p>
+            <span class="underline">bg-repeat</span> to repeat the background
+            image both vertically and horizontally.
+         </p>
+         <p>
+            <span class="underline">bg-no-repeat</span> use when you don't want
+            to repeat the background image.
+         </p>
+         <p>
+            <span class="underline">bg-repeat-x</span> to repeat the background
+            image only horizontally.
+         </p>
+         <p>
+            <span class="underline">bg-repeat-y</span> to repeat the background
+            image only vertically.
+         </p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- H2 SPECIFIC TOPIC HEADING (Spans Page w/background) -->
+         <h2
+            class="text-xl underline decoration-amber-200 underline-offset-4 py-5 mt-10 mb-5 bg-black text-white"
+         >
+            Background Size
+         </h2>
+         <!-- ----------------------------------------------------------- -->
+         <!-- SUB TOPIC HEADING EXPLANATION AND EXAMPLE CONTENT-->
+
+         <p>
+            <span class="underline">bg-auto</span> to display the background
+            image at its default size.
+         </p>
+         <div
+            style="background-image: url('/img1.jpg')"
+            class="mx-auto my-10 h-[600px] w-96 bg-red-900 bg-no-repeat bg-auto"
+         >
+         </div>
+         <p>
+            <span class="underline">bg-cover</span> to scale the background
+            image until it fills the background layer. (also using bg-center
+            here, see positioning below)
+         </p>
+         <div
+            style="background-image: url('/img1.jpg')"
+            class="mx-auto my-10 h-[600px] w-96 bg-red-900 bg-no-repeat bg-cover bg-center"
+         >
+         </div>
+         <p>
+            <span class="underline">bg-contain</span> to scale the background
+            image to the outer edges without cropping or stretching.
+         </p>
+         <div
+            style="background-image: url('/img1.jpg')"
+            class="mx-auto my-10 h-[600px] w-96 bg-red-900 bg-no-repeat bg-contain"
+         >
+         </div>
+
+         <!-- ----------------------------------------------------------- -->
+         <!-- H2 SPECIFIC TOPIC HEADING (Spans Page w/background) -->
+         <h2
+            class="text-xl underline decoration-amber-200 underline-offset-4 py-5 mt-10 mb-5 bg-black text-white"
+         >
+            Background Position
+         </h2>
+         <p class="underline">bg-bottom</p>
+         <p class="underline">bg-center</p>
+         <p class="underline">bg-left</p>
+         <p class="underline">bg-left-bottom</p>
+         <p class="underline">bg-left-top</p>
+         <p class="underline">bg-right</p>
+         <p class="underline">bg-right-bottom</p>
+         <p class="underline">bg-right-top</p>
+         <p class="underline">bg-top</p>
+      </div>
+   </div>
+</Layout>
+
+<!-- Background Attachment
+  bg-fixed	  background-attachment: fixed;
+  bg-local	  background-attachment: local;
+  bg-scroll	  background-attachment: scroll;
+--><!--
+  Shadows
+  shadow-sm	    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  shadow	      box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  shadow-md	    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  shadow-lg	    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  shadow-xl	    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  shadow-2xl	  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  shadow-inner	box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  shadow-none	  box-shadow: 0 0 #0000;
+ -->

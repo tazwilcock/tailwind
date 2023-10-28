@@ -1,0 +1,109 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import HomeBtn from "../../components/HomeBtn.astro"
+
+const tabAndMainH1Title = "Filters"
+const twDocsButtonName = "Blur"
+const twDocsButtonLink = "https://tailwindcss.com/docs/blur"
+---
+
+<Layout title={tabAndMainH1Title}>
+   <!-- ----------------------------------------------------------- -->
+   <!-- PADDING BOTTOM DIV -->
+   <div class="pb-20">
+      <!-- ----------------------------------------------------------- -->
+      <!-- HOME BUTTON -->
+      <div class="pl-5 pt-5">
+         <HomeBtn />
+      </div>
+      <!-- ----------------------------------------------------------- -->
+      <!-- PADDING 5 and TEXT CENTER DIV -->
+      <div class="p-5 text-center">
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN PAGE H1 TITLE -->
+         <h1 class="text-3xl font-semibold pb-10">{tabAndMainH1Title}</h1>
+         <!-- ----------------------------------------------------------- -->
+         <!-- TAILWIND DOCS BUTTON -->
+         <div class="flex justify-center">
+            <a
+               href={twDocsButtonLink}
+               target="_blank"
+               class="px-4 py-2 bg-teal-800 text-white rounded-2xl hover:bg-amber-200 hover:text-amber-800"
+               >twDocs {twDocsButtonName}</a
+            >
+         </div>
+         <!-- ----------------------------------------------------------- -->
+         <!-- PAGE TOPICS -->
+         <p
+            class="pt-10 underline underline-offset-4 decoration-amber-200 pb-3 text-2xl"
+         >
+            Page Topics
+         </p>
+         <p>Topic 1</p>
+         <p>Topic 2</p>
+         <p>Topic 3</p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN CONTENT -->
+         <!-- ----------------------------------------------------------- -->
+         <!-- H2 SPECIFIC TOPIC HEADING (Spans Page w/background) -->
+         <h2 class="py-5 mt-10 mb-5 bg-teal-800 text-white">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >1st Topic Heading</span
+            >
+         </h2>
+         <!-- ----------------------------------------------------------- -->
+         <!-- SUB TOPIC HEADING EXPLANATION -->
+         <p></p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- EXAMPLE CONTENT -->
+         <div>
+            <p></p>
+         </div>
+      </div>
+   </div>
+</Layout>
+
+<!-- Blur
+  blur-none	    filter: blur(0);
+  blur-sm	      filter: blur(4px);
+  blur	        filter: blur(8px);
+  blur-md	      filter: blur(12px);
+  blur-lg	      filter: blur(16px);
+  blur-xl	      filter: blur(24px);
+  blur-2xl	    filter: blur(40px);
+  blur-3xl	    filter: blur(64px);
+-->
+
+<!-- Brightness
+  brightness-0	    filter: brightness(0);
+  brightness-50	    filter: brightness(.5);
+  brightness-75	    filter: brightness(.75);
+  brightness-90	    filter: brightness(.9);
+  brightness-95	    filter: brightness(.95);
+  brightness-100	  filter: brightness(1);
+  brightness-105	  filter: brightness(1.05);
+  brightness-110	  filter: brightness(1.1);
+  brightness-125	  filter: brightness(1.25);
+  brightness-150	  filter: brightness(1.5);
+  brightness-200	  filter: brightness(2);
+-->
+
+<!-- Contrast
+  contrast-0	  filter: contrast(0);
+  contrast-50	  filter: contrast(.5);
+  contrast-75	  filter: contrast(.75);
+  contrast-100	filter: contrast(1);
+  contrast-125	filter: contrast(1.25);
+  contrast-150	filter: contrast(1.5);
+  contrast-200	filter: contrast(2);
+-->
+
+<!-- Hue Rotate
+  hue-rotate-0	    filter: hue-rotate(0deg);
+  hue-rotate-15	    filter: hue-rotate(15deg);
+  hue-rotate-30	    filter: hue-rotate(30deg);
+  hue-rotate-60	    filter: hue-rotate(60deg);
+  hue-rotate-90	    filter: hue-rotate(90deg);
+  hue-rotate-180	  filter: hue-rotate(180deg);
+-->

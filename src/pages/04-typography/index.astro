@@ -1,0 +1,934 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import HomeBtn from "../../components/HomeBtn.astro"
+
+const tabAndMainH1Title = "Typography"
+const twDocsButtonName = "Font Family"
+const twDocsButtonLink = "https://tailwindcss.com/docs/font-family"
+---
+
+<Layout title={tabAndMainH1Title}>
+   <div class="pl-5 pt-5">
+      <HomeBtn />
+   </div>
+   <div class="p-5 text-center">
+      <h1 class="text-2xl pb-10">{tabAndMainH1Title}</h1>
+      <a
+         href={twDocsButtonLink}
+         target="_blank"
+         class="px-4 py-2 bg-teal-800 text-white rounded-2xl hover:bg-amber-200 hover:text-amber-800"
+         >twDocs {twDocsButtonName}</a
+      >
+
+      <!-- MAIN CONTENT -->
+
+      <!-- DEFAULT FONTS / FONT FAMILY -->
+      <!-- -------------------------------------------------- -->
+
+      <p class="py-5 mt-10 mb-5 bg-teal-800 text-white">
+         <span class="text-xl underline decoration-amber-200 underline-offset-4"
+            >Font Family</span
+         >
+      </p>
+
+      <p class="pb-4">
+         font-<span
+            class="text-xl underline decoration-amber-200 underline-offset-4"
+            >sans</span
+         >, font-<span
+            class="text-xl underline decoration-amber-200 underline-offset-4"
+            >serif</span
+         >, and font-<span
+            class="text-xl underline decoration-amber-200 underline-offset-4"
+            >mono</span
+         >
+      </p>
+
+      <div class="font-sans text-2xl py-2">Sans</div>
+      <div class="font-serif text-2xl py-2">Serif</div>
+      <div class="font-mono text-2xl py-2">Mono</div>
+
+      <!-- FONT SIZES -->
+      <!-- ------------------------------------------------------------ -->
+
+      <div class="py-10 space-y-2 divide-y md:divide-none">
+         <p class="py-5 mb-5 bg-teal-800 text-white">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >Font Sizes</span
+            >
+         </p>
+
+         <p>Tailwind uses 2 css properties to adjust the text size.</p>
+         <p class="pb-5">
+            The
+            <span class="underline decoration-amber-200 underline-offset-4"
+               >font-size</span
+            > property and the <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >line-height</span
+            > property.
+         </p>
+
+         <!-- XS -->
+         <div class="pt-8">
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >xs</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >0.75rem (12px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1rem (16px)</span
+            >
+         </div>
+         <!-- SM -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >sm</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >0.875rem (14px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1.25rem (20px)</span
+            >
+         </div>
+         <!-- BASE -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >base</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1rem (16px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1.5rem (24px)</span
+            >
+         </div>
+         <!-- LG -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >lg</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1.125rem (18px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1.75rem (28px)</span
+            >
+         </div>
+         <!-- XL -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >xl</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1.25rem (20px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1.75rem (28px)</span
+            >
+         </div>
+         <!-- 2XL -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >2xl</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1.5rem (24px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >2rem (32px)</span
+            >
+         </div>
+         <!-- 3XL -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >3xl</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >1.875rem (30px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >2.25rem (36px)</span
+            >
+         </div>
+         <!-- 4XL -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >4xl</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >2.25rem (36px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >2.5rem (40px)</span
+            >
+         </div>
+         <!-- 5XL -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >5xl</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >3rem (48px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4">1</span
+            >
+         </div>
+         <!-- 6XL -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >6xl</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >3.75rem (60px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4">1</span
+            >
+         </div>
+         <!-- 7XL -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >7xl</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >4.5rem (72px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4">1</span
+            >
+         </div>
+         <!-- 8XL -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >8xl</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >6rem (96px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4">1</span
+            >
+         </div>
+         <!-- 9XL -->
+         <div>
+            text-<span class="underline decoration-amber-200 underline-offset-4"
+               >9xl</span
+            > - font-size: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >8rem (128px)</span
+            >
+            <span class="block md:inline"></span>
+             line-height: <span
+               class="underline decoration-amber-200 underline-offset-4">1</span
+            >
+         </div>
+      </div>
+
+      <div class="text-xs">xs</div>
+      <div class="text-sm">sm</div>
+      <div class="text-base">base</div>
+      <div class="text-lg">lg</div>
+      <div class="text-xl">xl</div>
+      <div class="text-2xl">2xl</div>
+      <div class="text-3xl">3xl</div>
+      <div class="text-4xl">4xl</div>
+      <div class="text-5xl">5xl</div>
+      <div class="text-6xl">6xl</div>
+      <div class="text-7xl">7xl</div>
+      <div class="text-8xl">8xl</div>
+      <div class="text-9xl">9xl</div>
+
+      <!-- FONT SMOOTHING -->
+      <!-- ------------------------------------------------------------------------ -->
+
+      <div class="py-10 space-y-2">
+         <p class="py-5 mb-5 bg-teal-800 text-white">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >Font Smoothing</span
+            >
+         </p>
+         <p class="subpixel-antialiased text-2xl">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >subpixel-antialiased</span
+            >
+             subpixel antialiasing
+         </p>
+         <p class="antialiased text-2xl">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >antialiased</span
+            > grayscale antialiasing
+         </p>
+      </div>
+   </div>
+
+   <!-- FONT STYLE -->
+   <!-- ------------------------------------------------------------------------------- -->
+
+   <div class="p-5 text-center">
+      <p class="py-5 mb-5 bg-teal-800 text-white">
+         <span class="text-xl underline decoration-amber-200 underline-offset-4"
+            >Font Style</span
+         >
+      </p>
+      <p class="not-italic text-xl pb-3 max-w-lg mx-auto">
+         <span class="text-xl underline decoration-amber-200 underline-offset-4"
+            >not-italic</span
+         > - "There Is Always Something To Love. Even In A Stupid, Stupid
+         Universe Where We Have Hot Dogs For Fingers, We Get Very Good With Our
+         Feet."
+      </p>
+      <p class="italic text-xl">
+         <span class="text-xl underline decoration-amber-200 underline-offset-4"
+            >italic</span
+         > - Everything, Everywhere, All at Once.
+      </p>
+   </div>
+
+   <!-- FONT WEIGHT -->
+   <!-- ------------------------------------------------------------------------------ -->
+
+   <div class="p-5 text-center">
+      <div class="py-10 space-y-2 divide-y md:divide-none">
+         <p class="py-5 mb-5 bg-teal-800 text-white">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >Font Weight</span
+            >
+         </p>
+
+         <!-- FONT THIN -->
+
+         <div class="font-thin">
+            font-<span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >thin</span
+            > - font-weight: <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >100</span
+            >
+         </div>
+
+         <!-- FONT EXTRALIGHT -->
+
+         <div class="font-extralight">
+            font-<span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >extralight</span
+            > - font-weight: <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >200</span
+            >
+         </div>
+
+         <!-- FONT LIGHT -->
+
+         <div class="font-extralight">
+            font-<span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >light</span
+            > - font-weight: <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >300</span
+            >
+         </div>
+
+         <!-- FONT NORMAL -->
+
+         <div class="font-extralight">
+            font-<span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >normal</span
+            > - font-weight: <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >400</span
+            >
+         </div>
+
+         <!-- FONT MEDIUM -->
+
+         <div class="font-extralight">
+            font-<span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >medium</span
+            > - font-weight: <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >500</span
+            >
+         </div>
+
+         <!-- FONT SEMIBOLD -->
+
+         <div class="font-extralight">
+            font-<span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >semibold</span
+            > - font-weight: <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >600</span
+            >
+         </div>
+
+         <!-- FONT BOLD -->
+
+         <div class="font-extralight">
+            font-<span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >bold</span
+            > - font-weight: <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >700</span
+            >
+         </div>
+
+         <!-- FONT EXTRABOLD -->
+
+         <div class="font-extralight">
+            font-<span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >extrabold</span
+            > - font-weight: <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >800</span
+            >
+         </div>
+
+         <!-- FONT BLACK -->
+
+         <div class="font-extralight">
+            font-<span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >black</span
+            > - font-weight: <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >900</span
+            >
+         </div>
+
+         <p class="py-4 max-w-xs mx-auto">
+            This project uses a font that only includes weights from 400-900 so
+            the examples here are from normal to black
+         </p>
+
+         <p class="text-2xl">Normal</p>
+         <p class="font-medium text-2xl">Medium</p>
+         <p class="font-semibold text-2xl">Semibold</p>
+         <p class="font-bold text-2xl">Bold</p>
+         <p class="font-extrabold text-2xl">Extrabold</p>
+         <p class="font-black text-2xl">Black</p>
+      </div>
+   </div>
+
+   <!-- LETTER SPACING -->
+   <!-- ---------------------------------------------------------------------------- -->
+
+   <div class="p-5 text-center">
+      <p class="py-5 mb-5 bg-teal-800 text-white">
+         <span class="text-xl underline decoration-amber-200 underline-offset-4"
+            >Letter Spacing</span
+         >
+      </p>
+      <div>Uses the letter-spacing property</div>
+      <div class="pb-6">
+         Utilities for controlling the tracking (letter spacing) of an element
+      </div>
+      <div class="text-2xl">
+         <div class="tracking-tighter">
+            tracking-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >tighter</span
+            > letter-spacing: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >-0.05em</span
+            >
+         </div>
+
+         <div class="tracking-tight">
+            tracking-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >tight</span
+            > letter-spacing: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >-0.025em</span
+            >
+         </div>
+
+         <div class="tracking-normal">
+            tracking-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >normal</span
+            > letter-spacing: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >0em</span
+            >
+         </div>
+
+         <div class="tracking-wide">
+            tracking-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >wide</span
+            > letter-spacing: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >0.025em</span
+            >
+         </div>
+
+         <div class="tracking-wider">
+            tracking-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >wider</span
+            > letter-spacing: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >0.05em</span
+            >
+         </div>
+
+         <div class="tracking-widest">
+            tracking-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >widest</span
+            > letter-spacing: <span
+               class="underline decoration-amber-200 underline-offset-4"
+               >0.1em</span
+            >
+         </div>
+      </div>
+   </div>
+
+   <!-- LINE CLAMP -->
+   <!-- ------------------------------------------------------------------------------------ -->
+
+   <div class="p-5 text-center">
+      <p class="py-5 mb-5 bg-teal-800 text-white">
+         <span class="text-xl underline decoration-amber-200 underline-offset-4"
+            >Line Clamp</span
+         >
+      </p>
+      <div>Uses the letter-spacing property</div>
+      <div class="pb-6">
+         Use the line-clamp-* utilities to truncate a block of text after a
+         specific number of lines
+      </div>
+      <div class="text-2xl">line-clamp-1</div>
+      <div class="text-2xl">line-clamp-2</div>
+      <div class="text-2xl">line-clamp-3</div>
+      <div class="text-2xl">line-clamp-4</div>
+      <div class="text-2xl">line-clamp-5</div>
+      <div class="text-2xl">line-clamp-6</div>
+      <div class="text-2xl">line-clamp-none</div>
+   </div>
+
+   <!-- LINE HEIGHT -->
+   <!-- ---------------------------------------------------------------------------------- -->
+
+   <div class="p-5 text-center">
+      <p class="py-5 mb-5 bg-teal-800 text-white">
+         <span class="text-xl underline decoration-amber-200 underline-offset-4"
+            >Line Height</span
+         >
+      </p>
+      <div>Uses the line-height property</div>
+      <div>This property is set when adjusting a font-size (like text-xl)</div>
+      <div>However, we can customize it if we want a different value</div>
+      <div class="pb-6">
+         Here are the utilities for controlling the leading (line height) of an
+         element
+      </div>
+      <a
+         class="px-4 py-2 bg-teal-800 text-white rounded-2xl hover:bg-amber-200 hover:text-amber-800"
+         href="https://kolosek.com/css-line-height/"
+         target="_blank">Read more about line-height here</a
+      >
+
+      <p class="pt-7 max-w-lg mx-auto">
+         <span class="text-lg underline decoration-amber-200 underline-offset-4"
+            >Fixed Line Heights.</span
+         > Use the leading-(size) utilities to give an element a fixed
+         line-height, irrespective of the current font-size. These are useful
+         when you need very precise control over an element's final size.
+      </p>
+
+      <div class="text-2xl pt-6">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >3</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >.75rem (12px)</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >4</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >1rem (16px)</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >5</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >1.25rem (20px)</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >6</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >1.5rem (24px)</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >7</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >1.75rem (28px)</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >8</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >2rem (32px)</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >9</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >2.25rem (36px)</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >10</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >2.5rem (40px)</span
+         >
+      </div>
+
+      <p class="pt-7 max-w-lg mx-auto">
+         <span class="text-lg underline decoration-amber-200 underline-offset-4"
+            >Relative Line Heights.</span
+         > Use the leading-none, leading-tight, leading-snug, leading-normal,
+         leading-relaxed, and leading-loose utilities to give an element a
+         relative line-height <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >based on its current font-size.</span
+         >
+      </p>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >none</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4">1</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >tight</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4">1.25</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >snug</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >1.375</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >normal</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4">1.5</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >relaxed</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >1.625</span
+         >
+      </div>
+
+      <div class="text-2xl pt-3">
+         leading-<span class="underline decoration-amber-200 underline-offset-4"
+            >loose</span
+         > line-height: <span
+            class="underline decoration-amber-200 underline-offset-4">2</span
+         >
+      </div>
+
+      <p class="pt-7 max-w-xl mx-auto">
+         If you want to override the default line-height after setting a
+         breakpoint-specific font-size (like text-lg leading-loose), make sure
+         to set a breakpoint-specific line-height as well (md:text-xl
+         md:leading-loose). Otherwise the line height set by default for text-xl
+         (which is 1.75rem) will be applied instead of leading-loose
+         (line-height: 2) which was originally set.
+      </p>
+   </div>
+
+   <!-- TEXT ALIGNMENT -->
+   <!-- ---------------------------------------------------------------------------------- -->
+
+   <div class="p-5 text-center">
+      <p class="py-5 mb-5 bg-teal-800 text-white">
+         <span class="text-xl underline decoration-amber-200 underline-offset-4"
+            >Text Align</span
+         >
+      </p>
+      <div class="pb-6">Utilities for controlling the alignment of text</div>
+
+      <div class="text-2xl">
+         text-<span class="underline decoration-amber-200 underline-offset-4"
+            >left</span
+         > text-align: <span
+            class="underline decoration-amber-200 underline-offset-4">left</span
+         >
+      </div>
+
+      <div class="text-2xl pt-2">
+         text-<span class="underline decoration-amber-200 underline-offset-4"
+            >center</span
+         > text-align: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >center</span
+         >
+      </div>
+
+      <div class="text-2xl pt-2">
+         text-<span class="underline decoration-amber-200 underline-offset-4"
+            >right</span
+         > text-align: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >right</span
+         >
+      </div>
+
+      <div class="text-2xl pt-2">
+         text-<span class="underline decoration-amber-200 underline-offset-4"
+            >justify</span
+         > text-align: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >justify</span
+         >
+      </div>
+
+      <div class="text-2xl pt-2">
+         text-<span class="underline decoration-amber-200 underline-offset-4"
+            >start</span
+         > text-align: <span
+            class="underline decoration-amber-200 underline-offset-4"
+            >start</span
+         >
+      </div>
+
+      <div class="text-2xl pt-2">
+         text-<span class="underline decoration-amber-200 underline-offset-4"
+            >end</span
+         > text-align: <span
+            class="underline decoration-amber-200 underline-offset-4">end</span
+         >
+      </div>
+
+      <!-- TEXT DECORATION -->
+      <!-- --------------------------------------------------------------------------- -->
+
+      <div class="p-5 text-center">
+         <p class="py-5 mb-5 bg-teal-800 text-white">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >Text Decoration</span
+            >
+         </p>
+         <div class="pb-6">
+            Control how text is decorated with the underline, overline,
+            no-underline, and line-through utilities
+         </div>
+
+         <div class="text-2xl pb-4">
+            <span class="overline decoration-wavy">overline</span> decoration-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >wavy</span
+            >
+         </div>
+
+         <div class="text-2xl pb-4">
+            <span class="underline underline-offset-4 decoration-dashed"
+               >underline</span
+            > decoration-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >dashed</span
+            >
+         </div>
+
+         <div class="text-2xl pb-4">
+            <span class="line-through decoration-dotted">line through</span>
+             decoration-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >dotted</span
+            >
+         </div>
+
+         <div class="text-2xl pb-10">
+            <span class="underline decoration-double">underline</span>
+             decoration-<span
+               class="underline decoration-amber-200 underline-offset-4"
+               >double</span
+            >
+         </div>
+
+         <div class="pb-4">
+            And don't forget your underline offsets none, 1, 2, 4, and 8
+         </div>
+
+         <div class="text-2xl pb-3">
+            underline-offset
+            <span class="underline decoration-amber-200">none</span>&nbsp;
+            <span class="underline decoration-amber-200 underline-offset-1"
+               >1</span
+            >&nbsp;
+            <span class="underline decoration-amber-200 underline-offset-2"
+               >2</span
+            >&nbsp;
+            <span class="underline decoration-amber-200 underline-offset-4"
+               >4</span
+            >&nbsp;
+            <span class="underline decoration-amber-200 underline-offset-8"
+               >8</span
+            >
+         </div>
+      </div>
+
+      <div class="pb-4">Text Decoration Thickness is also a thing</div>
+
+      <div class="text-2xl pb-4">
+         underline decoration
+
+         <span class="underline decoration-auto underline-offset-1">auto</span
+         >&nbsp;
+         <span class="underline decoration-from-font underline-offset-2"
+            >from-font</span
+         >&nbsp;
+         <span class="underline decoration-0 underline-offset-4">0</span>&nbsp;
+         <span class="underline decoration-1 underline-offset-4">1</span>&nbsp;
+         <span class="underline decoration-2 underline-offset-4">2</span>&nbsp;
+         <span class="underline decoration-4 underline-offset-4">4</span>&nbsp;
+         <span class="underline decoration-8 underline-offset-4">8</span>
+      </div>
+
+      <!-- TEXT TRANSFORM -->
+      <!-- --------------------------------------------------------------------------- -->
+
+      <div class="p-5 text-center">
+         <p class="py-5 mb-5 bg-teal-800 text-white">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >Text Transform</span
+            >
+         </p>
+         <div class="pb-6">
+            Utilities for controlling the transformation of text
+         </div>
+
+         <div class="text-2xl pb-4">
+            <span class="underline decoration-amber-200 underline-offset-4"
+               >uppercase</span
+            >
+            <span class="uppercase"> some text</span>
+         </div>
+         <div class="text-2xl pb-4">
+            <span class="underline decoration-amber-200 underline-offset-4"
+               >lowercase</span
+            >
+            <span class="lowercase"> some text</span>
+         </div>
+         <div class="text-2xl pb-4">
+            <span class="underline decoration-amber-200 underline-offset-4"
+               >capitalize</span
+            >
+            <span class="capitalize"> some text</span>
+         </div>
+         <div class="text-2xl pb-4">
+            <span class="underline decoration-amber-200 underline-offset-4"
+               >normal-case</span
+            >
+            <span class="normal-case"> some text</span>
+         </div>
+      </div>
+   </div>
+</Layout>
+
+<!-- Text Alignment
+  text-left	    text-align: left;
+  text-center	  text-align: center;
+  text-right	  text-align: right;
+  text-justify	text-align: justify;
+ -->
+
+<!-- Text Decoration
+  decoration-auto	      text-decoration-thickness: auto;
+  decoration-from-font	text-decoration-thickness: from-font;
+  decoration-0	        text-decoration-thickness: 0px;
+  decoration-1	        text-decoration-thickness: 1px;
+  decoration-2	        text-decoration-thickness: 2px;
+  decoration-4	        text-decoration-thickness: 4px;
+  decoration-8	        text-decoration-thickness: 8px;
+-->
+
+<!-- Text Transform
+  uppercase	  text-transform: uppercase;
+  lowercase	  text-transform: lowercase;
+  capitalize	text-transform: capitalize;
+  normal-case	text-transform: none;
+-->

@@ -1,0 +1,37 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import HomeBtn from "../../components/HomeBtn.astro"
+
+const tabAndMainH1Title = "Container, Margin, Padding, Space x&y"
+---
+
+<Layout title={tabAndMainH1Title}>
+   <div class="pl-5 pt-5">
+      <HomeBtn />
+   </div>
+   <div class="p-5 text-center">
+      <h1 class="text-2xl pb-10">{tabAndMainH1Title}</h1>
+
+      <h2 class="py-5 mt-10 mb-5 bg-black text-white">
+         <span class="text-xl underline decoration-amber-200 underline-offset-4"
+            >Container Class Breakpoints:</span
+         >
+      </h2>
+
+      <p>0px to 640px width: 100%;</p>
+      <p>sm (640px) max-width: 640px</p>
+      <p>md (768px) max-width: 768px</p>
+      <p>lg (1024px) max-width: 1024px</p>
+      <p>xl (1280px) max-width: 1280px</p>
+      <p class="pb-10">2xl (1536px) max-width: 1536px</p>
+
+      <h2 class="text-2xl py-3">
+         For Adding Margin use - mt, mr, mb, ml, mx, or my
+      </h2>
+      <h2 class="text-2xl py-3">Do the same for Padding but use a p</h2>
+      <h2 class="text-2xl py-3">
+         Space-x puts space between items on the x-axis
+      </h2>
+      <h2 class="text-2xl py-3">Space-y does the same but for the y-axis</h2>
+   </div>
+</Layout>

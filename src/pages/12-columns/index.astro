@@ -1,0 +1,87 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import HomeBtn from "../../components/HomeBtn.astro"
+const tabAndMainH1Title = "Columns"
+const twDocsButtonName = "Columns"
+const twDocsButtonLink =
+   "https://tailwindcss.com/docs/columns#adding-based-on-column-count"
+---
+
+<Layout title={tabAndMainH1Title}>
+   <!-- ----------------------------------------------------------- -->
+   <!-- PADDING BOTTOM DIV -->
+   <div class="pb-20">
+      <!-- ----------------------------------------------------------- -->
+      <!-- HOME BUTTON -->
+      <div class="pl-5 pt-5">
+         <HomeBtn />
+      </div>
+      <!-- ----------------------------------------------------------- -->
+      <!-- PADDING 5 and TEXT CENTER DIV -->
+      <div class="p-5 text-center">
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN PAGE H1 TITLE -->
+         <h1 class="text-3xl font-semibold pb-10">{tabAndMainH1Title}</h1>
+         <!-- ----------------------------------------------------------- -->
+         <!-- TAILWIND DOCS BUTTON -->
+         <div class="flex justify-center">
+            <a
+               href={twDocsButtonLink}
+               target="_blank"
+               class="px-4 py-2 bg-teal-800 text-white rounded-2xl hover:bg-amber-200 hover:text-amber-800"
+               >twDocs {twDocsButtonName}</a
+            >
+         </div>
+         <!-- ----------------------------------------------------------- -->
+         <!-- PAGE TOPICS -->
+         <p
+            class="pt-10 underline underline-offset-4 decoration-amber-200 pb-3 text-2xl"
+         >
+            Page Topics
+         </p>
+         <p>Topic 1</p>
+         <p>Topic 2</p>
+         <p>Topic 3</p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN CONTENT -->
+         <!-- ----------------------------------------------------------- -->
+         <!-- H2 SPECIFIC TOPIC HEADING (Spans Page w/background) -->
+         <h2 class="py-5 mt-10 mb-5 bg-teal-800 text-white">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >1st Topic Heading</span
+            >
+         </h2>
+         <!-- ----------------------------------------------------------- -->
+         <!-- SUB TOPIC HEADING EXPLANATION -->
+         <p></p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- EXAMPLE CONTENT -->
+         <div>
+            <p></p>
+         </div>
+      </div>
+   </div>
+</Layout>
+
+<!-- Break After
+  break-after-auto	break-after: auto;
+  break-after-avoid	break-after: avoid;
+  break-after-all	break-after: all;
+  break-after-avoid-page	break-after: avoid-page;
+  break-after-page	break-after: page;
+  break-after-left	break-after: left;
+  break-after-right	break-after: right;
+  break-after-column	break-after: column;
+-->
+
+<!-- Break Before
+  reak-before-auto	break-before: auto;
+  break-before-avoid	break-before: avoid;
+  break-before-all	break-before: all;
+  break-before-avoid-page	break-before: avoid-page;
+  break-before-page	break-before: page;
+  break-before-left	break-before: left;
+  break-before-right	break-before: right;
+  break-before-column	break-before: column;
+-->

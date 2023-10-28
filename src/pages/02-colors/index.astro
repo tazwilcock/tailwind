@@ -1,0 +1,103 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import HomeBtn from "../../components/HomeBtn.astro"
+---
+
+<Layout title="Working With Colors">
+   <div class="pl-5 pt-5">
+      <HomeBtn />
+   </div>
+   <div class="p-5">
+      <h3 class="text-2xl text-center">Working With Colors</h3>
+      <p class="text-xl py-3">By Default Tailwind gives us built-in colors:</p>
+      <p class="max-w-xl p-2 rounded-md bg-white">
+         <span class="text-black uppercase font-bold">black &nbsp;</span>
+         <span class="text-red-500 uppercase font-bold">red &nbsp;</span>
+         <span class="text-green-500 uppercase font-bold">green &nbsp;</span>
+         <span class="text-blue-500 uppercase font-bold">blue &nbsp;</span>
+         <span class="text-orange-500 uppercase font-bold">orange &nbsp;</span>
+         <span class="text-yellow-500 uppercase font-bold">yellow &nbsp;</span>
+         <span class="text-purple-500 uppercase font-bold">purple &nbsp;</span>
+         <span class="text-lime-500 uppercase font-bold">lime &nbsp;</span>
+         <span class="text-emerald-500 uppercase font-bold">emerald &nbsp;</span
+         >
+         <span class="text-teal-500 uppercase font-bold">teal &nbsp;</span>
+         <span class="text-cyan-500 uppercase font-bold">cyan &nbsp;</span>
+         <span class="text-indigo-500 uppercase font-bold">indigo &nbsp;</span>
+         <span class="text-violet-500 uppercase font-bold">violet &nbsp;</span>
+         <span class="text-fuchsia-500 uppercase font-bold">fuchsia &nbsp;</span
+         >
+         <span class="text-pink-500 uppercase font-bold">pink &nbsp;</span>
+         <span class="text-rose-500 uppercase font-bold">rose &nbsp;</span>
+         <span class="text-sky-500 uppercase font-bold">sky &nbsp;</span>
+         <span class="text-gray-500 uppercase font-bold">gray &nbsp;</span>
+         <span class="text-slate-500 uppercase font-bold">slate &nbsp;</span>
+         <span class="text-zinc-500 uppercase font-bold">zinc &nbsp;</span>
+         <span class="text-neutral-500 uppercase font-bold">neutral &nbsp;</span
+         >
+         <span class="text-stone-500 uppercase font-bold">stone &nbsp;</span>
+         <span class="text-amber-500 uppercase font-bold">amber &nbsp;</span>
+      </p>
+
+      <p class="pt-3">Change Text Colors with text-(color)</p>
+      <p>example: text-red-500</p>
+      <p>All colors (except black and white) have shades:</p>
+      <p>50 - 100 - 200 - 300 - 400 - 500 - 600 - 700 - 800 - 900 - 950</p>
+
+      <div class="w-full border-y-2 border-gray-600 my-5"></div>
+
+      <p>Change background colors with bg-(color)</p>
+      <p>example: bg-blue-700 like this:</p>
+      <p class="bg-blue-700 text-white text-center my-3">text-white</p>
+
+      <div class="w-full border-y-2 border-gray-600 my-5"></div>
+
+      <p>Underline text with underline</p>
+      <p class="underline">Underlined Text</p>
+      <p class="underline underline-offset-4">Underline-offset-4</p>
+      <p class="underline underline-offset-8 decoration-purple-500">
+         decoration-(color) changes the underline color
+      </p>
+
+      <div class="w-full border-y-2 border-gray-600 my-5"></div>
+
+      <p>Add a border with border</p>
+      <p>Increase the width width with border-2 4 8</p>
+      <div class="p-6 space-y-2 max-w-sm text-center">
+         <p class="border-t border-lime-300">Top: border-t border-lime-300</p>
+         <p class="border-b border-yellow-400">
+            Bottom: border-b border-yellow-400
+         </p>
+         <p class="border-l border-red-400">Left: border-l border-red-400</p>
+         <p class="border-r border-sky-600">Right: border-r border-sky-600</p>
+      </div>
+      <p>example on input: border-4 border-fuchsia-600</p>
+      <input type="text" class="border-4 border-fuchsia-600" />
+
+      <div class="w-full border-y-2 border-gray-600 my-5"></div>
+
+      <p>divide-x-2 4 8</p>
+      <p>Add a divide color with divide-orange-400</p>
+      <div class="p-6 flex space-x-6 divide-x-4 divide-orange-400">
+         <div>element</div>
+         <div class="pl-6">element</div>
+         <div class="pl-6">element</div>
+      </div>
+
+      <p>divide-y</p>
+      <div class="p-6 space-y-2 divide-y max-w-xs text-center">
+         <p>element</p>
+         <p class="pt-2">element</p>
+         <p class="pt-2">element</p>
+         <p class="pt-2">element</p>
+      </div>
+   </div>
+
+   <!-- Outline Colors -->
+
+   <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+
+   <!-- Accent Colors -->
+
+   <!-- Arbitrary Colors -->
+</Layout>

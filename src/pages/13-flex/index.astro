@@ -1,0 +1,108 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import HomeBtn from "../../components/HomeBtn.astro"
+const tabAndMainH1Title = "Flexbox"
+const twDocsButtonName = "Flex"
+const twDocsButtonLink = "https://tailwindcss.com/docs/flex"
+---
+
+<Layout title={tabAndMainH1Title}>
+   <!-- ----------------------------------------------------------- -->
+   <!-- PADDING BOTTOM DIV -->
+   <div class="pb-20">
+      <!-- ----------------------------------------------------------- -->
+      <!-- HOME BUTTON -->
+      <div class="pl-5 pt-5">
+         <HomeBtn />
+      </div>
+      <!-- ----------------------------------------------------------- -->
+      <!-- PADDING 5 and TEXT CENTER DIV -->
+      <div class="p-5 text-center">
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN PAGE H1 TITLE -->
+         <h1 class="text-3xl font-semibold pb-10">{tabAndMainH1Title}</h1>
+         <!-- ----------------------------------------------------------- -->
+         <!-- TAILWIND DOCS BUTTON -->
+         <div class="flex justify-center">
+            <a
+               href={twDocsButtonLink}
+               target="_blank"
+               class="px-4 py-2 bg-teal-800 text-white rounded-2xl hover:bg-amber-200 hover:text-amber-800"
+               >twDocs {twDocsButtonName}</a
+            >
+         </div>
+         <!-- ----------------------------------------------------------- -->
+         <!-- PAGE TOPICS -->
+         <p
+            class="pt-10 underline underline-offset-4 decoration-amber-200 pb-3 text-2xl"
+         >
+            Page Topics
+         </p>
+         <p>Topic 1</p>
+         <p>Topic 2</p>
+         <p>Topic 3</p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN CONTENT -->
+         <!-- ----------------------------------------------------------- -->
+         <!-- H2 SPECIFIC TOPIC HEADING (Spans Page w/background) -->
+         <h2 class="py-5 mt-10 mb-5 bg-teal-800 text-white">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >1st Topic Heading</span
+            >
+         </h2>
+         <!-- ----------------------------------------------------------- -->
+         <!-- SUB TOPIC HEADING EXPLANATION -->
+         <p></p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- EXAMPLE CONTENT -->
+         <div>
+            <p></p>
+         </div>
+      </div>
+   </div>
+</Layout>
+
+<!-- Justify Content
+      justify-start	      justify-content: flex-start;
+      justify-end	        justify-content: flex-end;
+      justify-center	    justify-content: center;
+      justify-between	    justify-content: space-between;
+      justify-around	    justify-content: space-around;
+      justify-evenly	    justify-content: space-evenly;
+    -->
+
+<!--
+      items-start	align-items: flex-start;
+      items-end	align-items: flex-end;
+      items-center	align-items: center;
+      items-baseline	align-items: baseline;
+      items-stretch	align-items: stretch;
+     -->
+
+<!-- Flex Direction
+      flex-row	        flex-direction: row;
+      flex-row-reverse	flex-direction: row-reverse;
+      flex-col	        flex-direction: column;
+      flex-col-reverse	flex-direction: column-reverse;
+    -->
+
+<!--
+      flex-wrap	        flex-wrap: wrap;
+      flex-wrap-reverse	flex-wrap: wrap-reverse;
+      flex-nowrap	      flex-wrap: nowrap;
+     -->
+
+<!-- Flex Properties
+      flex-none	    flex: none;
+      Prevent item from growing or shrinking
+
+      flex-initial	flex: 0 1 auto;
+      Allow item to shrink but not grow, taking into account its initial size
+
+      flex-auto	    flex: 1 1 auto;
+      Allow item to grow and shrink, taking into account its initial size
+
+      flex-1	      flex: 1 1 0%;
+      Allow item to grow and shrink as needed, ignoring its initial size
+    -->

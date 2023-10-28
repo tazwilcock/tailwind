@@ -1,0 +1,135 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import HomeBtn from "../../components/HomeBtn.astro"
+const tabAndMainH1Title = "Animations"
+const twDocsButtonName = "Animation"
+const twDocsButtonLink = "https://tailwindcss.com/docs/animation"
+---
+
+<Layout title={tabAndMainH1Title}>
+   <!-- ----------------------------------------------------------- -->
+   <!-- PADDING BOTTOM DIV -->
+   <div class="pb-20">
+      <!-- ----------------------------------------------------------- -->
+      <!-- HOME BUTTON -->
+      <div class="pl-5 pt-5">
+         <HomeBtn />
+      </div>
+      <!-- ----------------------------------------------------------- -->
+      <!-- PADDING 5 and TEXT CENTER DIV -->
+      <div class="p-5 text-center">
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN PAGE H1 TITLE -->
+         <h1 class="text-3xl font-semibold pb-10">{tabAndMainH1Title}</h1>
+         <!-- ----------------------------------------------------------- -->
+         <!-- TAILWIND DOCS BUTTON -->
+         <div class="flex justify-center">
+            <a
+               href={twDocsButtonLink}
+               target="_blank"
+               class="px-4 py-2 bg-teal-800 text-white rounded-2xl hover:bg-amber-200 hover:text-amber-800"
+               >twDocs {twDocsButtonName}</a
+            >
+         </div>
+         <!-- ----------------------------------------------------------- -->
+         <!-- PAGE TOPICS -->
+         <p
+            class="pt-10 underline underline-offset-4 decoration-amber-200 pb-3 text-2xl"
+         >
+            Page Topics
+         </p>
+         <p>Topic 1</p>
+         <p>Topic 2</p>
+         <p>Topic 3</p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- MAIN CONTENT -->
+         <!-- ----------------------------------------------------------- -->
+         <!-- H2 SPECIFIC TOPIC HEADING (Spans Page w/background) -->
+         <h2 class="py-5 mt-10 mb-5 bg-teal-800 text-white">
+            <span
+               class="text-xl underline decoration-amber-200 underline-offset-4"
+               >1st Topic Heading</span
+            >
+         </h2>
+         <!-- ----------------------------------------------------------- -->
+         <!-- SUB TOPIC HEADING EXPLANATION -->
+         <p></p>
+         <!-- ----------------------------------------------------------- -->
+         <!-- EXAMPLE CONTENT -->
+         <div
+            class="flex items-center justify-center min-h-screen bg-slate-900"
+         >
+            <svg
+               class="w-48 text-white"
+               xmlns="http://www.w3.org/2000/svg"
+               fill="none"
+               viewBox="0 0 24 24"
+            >
+               <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"></circle>
+               <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+               ></path>
+            </svg>
+         </div>
+      </div>
+   </div>
+</Layout>
+
+<!-- Animate
+animate-none	animation: none;
+
+animate-spin	animation: spin 1s linear infinite;
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+animate-ping	animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+animate-pulse	animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+
+animate-bounce	animation: bounce 1s infinite;
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+-->
