@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-			'sans': ['Gabarito', 'sans-serif']
+			'sans': ['Gabarito', 'sans-serif'],
+			'title': ['Poiret One', 'sans-serif']
 		},
 		},
 	},
