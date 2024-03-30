@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Red Rose", "serif"],
+        sans: ["Open Sans", "sans-serif"],
+        serif: ["Red Rose", "serif"],
       },
     },
   },
